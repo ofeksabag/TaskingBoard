@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTaskBoard - Ofek Sabag</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>My Task Board</h1>
+    </header>
+
+    <section>
+        <container id="windowsXP">
+            <div id="notepadBlackBG">
+                <div id="notepad">
+                    <div id="hideNotepad" onclick="hideNotepad()"></div>
+                    <div id="notepadPage">
+                        <div id="notepadText"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="internetBlackBG">
+                <div id="internet">
+                    <div id="hideInternet" onclick="hideInternet()"></div>
+                    <div id="internetPage">
+                        <div id="internetTitle">/addNew.html - Microsoft Internet Explorer</div>
+                        <form onsubmit="addTask()">
+                            <h2 class="makeCenter">Add notepad:</h2>
+                            <table class="makeFlexCenter">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <label for="noteName">Note name:</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="noteName" required/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="noteText">Note text:</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="noteText" required/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="noteDate">Note date:</label>
+                                        </td>
+                                        <td>
+                                            <input type="date" id="noteDate" required/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label for="noteTime">Note time:</label>
+                                        </td>
+                                        <td>
+                                            <input type="time" id="noteTime" required/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>
+                                            <input type="reset" value="Reset" class="btn btn-danger"/>
+                                            <input type="submit" value="Submit" class="btn btn-success" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                        <br />
+                        <div id="formStatus" class="makeCenter"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="home">
+                <div id="apps">
+                    <div id="app" ondblclick="showInternet()">
+                        <div id="addNewIcon"></div>
+                        <span>addNew.html</span>
+                    </div>
+                    <div id="printApps"></div>
+                </div>
+                <div id="taskBar">
+                    <div id="start"></div>
+                </div>
+            </div>
+        </container>
+    </section>
+    
+    <footer>
+        <hr>
+        *Tip: Double click to open any app.
+        <br />
+        <a href="https://github.com/ofeksabag" target="_blank"><i class="bi bi-github"></i></a>
+        Ofek Sabag --> &copy; All rights reserved
+    </footer>
+</body>
+</html>

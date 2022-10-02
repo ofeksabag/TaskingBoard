@@ -1,0 +1,196 @@
+@font-face {
+    font-family: oldSchool;
+    src: url(assets/fonts/karma\ future.otf);
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+h1:nth-of-type(1){
+    font-family: oldSchool;
+    font-size: 80px;
+    text-align: center;
+}
+section {
+    display: flex;
+    justify-content: center;
+}
+@keyframes loadWindows {
+    0% {
+        background-image: url(assets/images/loading.png);
+    }
+    50% {
+        background-image: url(assets/images/loading.png);
+    }
+    80% {
+        background-image: url(assets/images/welcome.png);
+    }
+    100% {
+        background-image: url(assets/images/bg.jpg);
+    }
+}
+#windowsXP {
+    width: 1000px;
+    height: 700px;
+    background-image: url(assets/images/bg.jpg);
+    background-size: 100% 100%;
+    box-shadow: 5px 5px 20px 0px #000;
+    border: 1px solid #000;
+    animation: loadWindows 8s;
+    position: relative;
+    cursor: url(assets/cursor/cursor.cur), auto;
+}
+#home {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    display: none;
+}
+#apps {
+    align-self: flex-start;
+    margin: 20px;
+}
+#taskBar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%);
+}
+#start {
+    width: 100px;
+    height: 30px;
+    background-image: url(assets/images/start.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+#app {
+    width: 80px;
+    height: 80px;
+    font-family: Tahoma;
+    font-size: 11px;
+    color: #FFF;
+    text-shadow: 0px 0px 3px #000;
+    cursor: pointer;
+    text-align: center;
+}
+#addNewIcon {
+    background-image: url(assets/images/addNew.webp);
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 25%;
+}
+footer {
+    margin-top: 3%;
+    text-align: center;
+}
+#internetBlackBG, #notepadBlackBG {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    display: none;
+}
+#internet {
+    width: 640px;
+    height: 100%;
+    background-image: url(assets/images/internet.png);
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#notepad {
+    width: 600px;
+    height: 100%;
+    background-image: url(assets/images/note.png);
+    background-size: 100% 100%;
+    border-radius: 8px 8px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hideInternet, #hideNotepad {
+    padding: 5px;
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+    margin-left: 96%;
+}
+#internetPage {
+    margin-top: 15%;
+}
+#notepadPage {
+    margin-left: 2%;
+    margin-top: 4%;
+}
+input {
+    padding: 3px;
+    font-size: 14px;
+}
+td {
+    padding: 5px;
+}
+#notepadIcon {
+    background-image: url(assets/images/notepad.webp);
+    background-size: 100% 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 25%;
+}
+#printApps {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+#printApps > #apps {
+    grid-column: span 1;
+}
+#notepadText {
+    width: 99%;
+    height: 630px;
+    overflow: auto;
+}
+.deleteBtn {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background-color: rgba(0,0,0,0.3);
+    color: #FFF;
+    border-radius: 100%;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-left: 50px;
+    transition: 0.5s;
+    padding-bottom: 3px;
+    padding-right: 5px;
+}
+.deleteBtn:Hover {
+    background-color: #000;
+    transition: 0.5s;
+}
+#notepadTitle {
+    position: absolute;
+    top: 3px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0px 0px 1px #000;
+}
+#internetTitle {
+    position: absolute;
+    top: 3px;
+    margin-left: 3%;
+    font-size: 13px;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0px 0px 1px #000;
+}
+.makeCenter {
+    text-align: center;
+}
+.makeFlexCenter {
+    display: flex;
+    justify-content: center;
+}
