@@ -1,11 +1,7 @@
 
 # Tasking Board
 
-WindowsXP Tasking board created by me :-)
-
-## Link
-
-[WindowsXP Task board](https://ofeksabag.github.io/TaskingBoard/)
+[WindowsXP Task board](https://ofeksabag.github.io/TaskingBoard/) created by me :-)
 
 ## Screenshots
 
