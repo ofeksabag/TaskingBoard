@@ -22,10 +22,10 @@ function hideInternet() {
 
 const noteDate = document.getElementById('noteDate');
 
-d = new Date();
-year = d.getFullYear();
-month = d.getMonth()+1;
-dt = d.getDate();
+const d = new Date();
+let year = d.getFullYear();
+let month = d.getMonth()+1;
+let dt = d.getDate();
 
 if (dt < 10) {
   dt = '0' + dt;
